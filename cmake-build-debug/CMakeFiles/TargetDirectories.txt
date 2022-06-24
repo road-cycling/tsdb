@@ -1,0 +1,3 @@
+/Users/nathankamm/Desktop/timeseries_db/cmake-build-debug/CMakeFiles/timeseries_db.dir
+/Users/nathankamm/Desktop/timeseries_db/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nathankamm/Desktop/timeseries_db/cmake-build-debug/CMakeFiles/rebuild_cache.dir
