@@ -16,13 +16,20 @@ public:
     ~Indexer();
 
     void Index(ts_proto::MetricWriter *metric);
+
+    void EnrichMetric(ts_proto::MetricWriter *metric);
+
+    std::shared_ptr<indexed_schema> getIndexedSchemaForNamespace(std::string nmespace) {
+        return index[nmespace];
+    }
 private:
 
     std::mutex metricSchemaRegistrationLock;
 
 //    std::map<std::string, std::mutex> tagKeyLocks;
 
-    std::map<std::string, std::unique_ptr<indexed_schema>> index;
+    //
+    std::map<std::string, std::shared_ptr<indexed_schema>> index;
 
 
 

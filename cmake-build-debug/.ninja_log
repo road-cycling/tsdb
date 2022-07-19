@@ -1,7 +1,0 @@
-# ninja log v5
-14	1054	1655605657355240398	CMakeFiles/timeseries_db.dir/timeseries/timeseries.cpp.o	d3e4ef4a08bd4cf3
-1	1210	1655605657507393153	CMakeFiles/timeseries_db.dir/main.cpp.o	21ec0cbd8fc86da2
-6	1235	1655605657535363129	CMakeFiles/timeseries_db.dir/stream/bitstream.cpp.o	8abc591284bbf7af
-2	1923	1655605658222996192	CMakeFiles/timeseries_db.dir/index/indexer.cpp.o	129b5cde761d898e
-2	1981	1655605658279244101	CMakeFiles/timeseries_db.dir/index/indexer_router.cpp.o	287064762bd3b32e
-14	2250	1655605658548101143	CMakeFiles/timeseries_db.dir/service/query_write.pb.cpp.o	af2d711c52976e76

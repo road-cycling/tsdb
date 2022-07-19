@@ -38,7 +38,10 @@ void indexed_schema::Index(ts_proto::MetricWriter *metric) {
 }
 
 void indexed_schema::Query(std::map<std::string, std::string> tagQuery) {
-    auto r = roaring::Roaring();
-657
+
+}
+
+roaring::Roaring indexed_schema::QueryFromAST(const std::string& tagK, const std::string& tagV) {
+    return this->namespacedMetricIndex[tagK][tagV];
 }
 

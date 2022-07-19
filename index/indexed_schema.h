@@ -15,6 +15,8 @@ public:
 
     void Query(std::map<std::string, std::string> tagQuery);
 
+    roaring::Roaring QueryFromAST(const std::string& tagK, const std::string& tagV);
+
     int ObtainRowIndex(uint64_t rowIndex);
 
 private:

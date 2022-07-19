@@ -16,20 +16,20 @@ BlockBuilder::~BlockBuilder()= default;
 
 void BlockBuilder::Serialize(std::ostream &writer){
 
-    writer.write(
-            reinterpret_cast<char *>(&this->_metric_id),
-            sizeof (this->_metric_id)
-    );
-
-    writer.write(
-            reinterpret_cast<char *>(&this->blockStart),
-            sizeof (this->blockStart)
-    );
-
-    writer.write(
-            reinterpret_cast<char *>(&this->pointsWritten),
-            sizeof (this->pointsWritten)
-    );
+//    writer.write(
+//            reinterpret_cast<char *>(&this->_metric_id),
+//            sizeof (this->_metric_id)
+//    );
+//
+//    writer.write(
+//            reinterpret_cast<char *>(&this->blockStart),
+//            sizeof (this->blockStart)
+//    );
+//
+//    writer.write(
+//            reinterpret_cast<char *>(&this->pointsWritten),
+//            sizeof (this->pointsWritten)
+//    );
 
     this->bitStream->Serialize(writer);
 }
@@ -71,20 +71,20 @@ std::unique_ptr<BlockBuilder> BlockBuilder::Deserialize(std::istream &reader) {
 
     auto seriesBlock = std::make_unique<BlockBuilder>();
 
-    reader.read(
-            (char *)&seriesBlock->_metric_id,
-            sizeof (seriesBlock->_metric_id)
-    );
-
-    reader.read(
-            (char *)&seriesBlock->blockStart,
-            sizeof (seriesBlock->blockStart)
-    );
-
-    reader.read(
-            (char *)&seriesBlock->pointsWritten,
-            sizeof (seriesBlock->pointsWritten)
-    );
+//    reader.read(
+//            (char *)&seriesBlock->_metric_id,
+//            sizeof (seriesBlock->_metric_id)
+//    );
+//
+//    reader.read(
+//            (char *)&seriesBlock->blockStart,
+//            sizeof (seriesBlock->blockStart)
+//    );
+//
+//    reader.read(
+//            (char *)&seriesBlock->pointsWritten,
+//            sizeof (seriesBlock->pointsWritten)
+//    );
 
     seriesBlock->bitStream->Deserialize(reader);
 
